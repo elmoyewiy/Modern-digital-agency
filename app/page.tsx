@@ -2,6 +2,10 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import Image from "next/image";
+import elena from "@/assets/elena rodrigues.jpeg";
+import chen from "@/assets/micheal chen.jpeg";
+import sahrah from "@/assets/sahrah johson.jpeg";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { ArrowRight, Sparkles, Menu, X, TrendingUp, Eye } from "lucide-react";
 
@@ -121,19 +125,19 @@ export default function AgencyWebsite() {
           {/* Client Badge */}
           <div className="inline-flex items-center gap-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-6 py-3 mb-8">
             <div className="flex -space-x-2">
-              <Avatar className="w-8 h-8 border-2 border-black">
-                <AvatarFallback className="bg-purple-600 text-white text-xs">
-                  A
+              <Avatar className="w-15 h-15 border-2 border-black">
+                <AvatarFallback>
+                  <Image alt="elana" src={elena} />
                 </AvatarFallback>
               </Avatar>
-              <Avatar className="w-8 h-8 border-2 border-black">
-                <AvatarFallback className="bg-pink-600 text-white text-xs">
-                  B
+              <Avatar className="w-15 h-15 border-2 border-black">
+                <AvatarFallback>
+                  <Image alt="sahrah" src={sahrah} />
                 </AvatarFallback>
               </Avatar>
-              <Avatar className="w-8 h-8 border-2 border-black">
-                <AvatarFallback className="bg-indigo-600 text-white text-xs">
-                  C
+              <Avatar className="w-15 h-15 border-2 border-black">
+                <AvatarFallback>
+                  <Image alt="chen" src={chen} />
                 </AvatarFallback>
               </Avatar>
             </div>
